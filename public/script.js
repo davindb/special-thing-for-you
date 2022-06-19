@@ -36,6 +36,7 @@ function pass_input() {
   jQuery.noConflict();
   if (pass === realpass) {
     $("#modal_first").modal("hide");
+    $("#pass").val("");
     $("#modal_1").modal("show");
   } else {
     alert("Wrong password!");
