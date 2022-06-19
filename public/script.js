@@ -29,3 +29,16 @@ function ditasari() {
     document.location = "./#sixthings";
   }, 1000);
 }
+
+function pass_input() {
+  const pass = $("#pass").val().toLowerCase().trim();
+  const realpass = "specialthingforditaaa";
+  jQuery.noConflict();
+  if (pass === realpass) {
+    $("#modal_first").modal("hide");
+    $("#modal_1").modal("show");
+  } else {
+    alert("Wrong password!");
+    $("#pass").val("");
+  }
+}
