@@ -9,7 +9,6 @@ const app = express();
 app.use(express.static("public"));
 
 const PORT = process.env.PORT || 5000;
-// const PORT = 5000;
 
 app.use(express.json());
 

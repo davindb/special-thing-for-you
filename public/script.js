@@ -26,12 +26,6 @@ function ditasari() {
   jQuery.noConflict();
   $("#modal_4").modal("hide");
   setTimeout(function () {
-    document.location = "./index.html#sixthings";
-    $("html, body").animate(
-      {
-        scrollTop: $("#sixthings").offset().top,
-      },
-      2000
-    );
-  }, 500);
+    document.location = "./#sixthings";
+  }, 1000);
 }
